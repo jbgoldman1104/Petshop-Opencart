@@ -1,0 +1,127 @@
+
+
+/*
+ *    dropdown menu {
+ */
+
+.dropdown-menu {
+  @include rtl-left(0);
+  @include rtl-float-left();
+  @include rtl-text-align-left(); // Ensures proper alignment if parent has it changed (e.g., modal footer)
+}
+
+ /*
+ *    Panel Heading
+ */
+
+.panel-default > {
+    .panel-heading{
+        &:before{
+            position: absolute;
+            bottom: -3px;
+            @include rtl-left(0);
+            @include size(30px,3px);
+            background-color:" ";
+            content:"";
+            background : $theme-color;
+        }
+        
+    }
+}
+
+
+/*
+ * Form required
+ */
+
+
+div.required .control-label::before {
+  color: #f00;
+  content: "* ";
+  font-weight: bold;
+}
+
+
+/*
+ *    Widget layout
+ */
+
+
+
+#column-left,
+#column-right{
+    .panel-heading{
+        background-color: $white;
+        padding: $theme-padding;
+        margin-bottom: 0;
+
+        .panel-title{
+            font-size: 22px;
+
+            font-weight: 500;
+        }
+        &:before{
+            display: none;
+        }
+    }
+    .panel-body{
+        background-color: $white;
+        ul{
+            list-style: none;
+            padding: 10px 0;
+            li{
+                border-bottom: 1px solid $border-color;
+                margin-bottom: 0;
+                background-color: transparent;
+                padding: $theme-padding / 2 $theme-padding;
+                a{
+                    &.active{
+                        font-weight: 600;
+                        color: $theme-color;
+                    }
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+        a.list-group-item{
+            font-weight: 600;
+        }
+        label.checkbox{
+            font-weight: 400;
+        }
+        .filter-submit{
+            padding: 0 $theme-margin;
+            margin-bottom: $theme-margin;
+        }
+    }
+}
+
+.panel {
+ 	@include box-shadow(0 0px 0px transparent);
+}
+.panel-body .list-group-item{
+	border: none;
+ 	&:hover > a, li:hover a{
+ 		font-weight: 400;
+ 	}
+	ul li{
+		padding: 5px 0;
+		border: none;
+	}
+}
+.nav-tabs{
+	margin-bottom:20px;
+
+	.tab-content{
+	}
+}
+.list-unstyled{
+    color: #333;
+    font-size: 13px;
+    line-height: 23px;
+	span{
+		color: $theme-color-second;
+	}
+}

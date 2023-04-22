@@ -1,0 +1,134 @@
+.pav-parallax {
+  	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center center;
+  	position: relative;
+}
+.pav-parallax:before{
+	 background: url(admin/images/pattern.png);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.8;
+}
+/**
+ * Suffix classes for make owner style for row and column. this will load automatic in setting form.
+ * format: .pav-col.YOUR_SUFFIX_CLASS , .pav-row.YOUR_SUFFIX_CLASS;
+ */
+
+ /* widget load prestashop module **/
+.widget-inner > [class*="col-"]{
+
+ }
+/* column style */
+.pav-col.default{
+
+}
+
+.pav-col.primary{
+
+}
+
+.pav-col.success{
+
+}
+
+.pav-col.info{
+
+}
+
+.pav-col.warning{
+
+}
+
+.pav-col.danger{
+
+}
+
+.pav-col.highlighted{
+
+}
+
+/* row style */
+.pav-row.default{
+
+}
+
+.pav-row.primary{
+
+}
+
+.pav-row.success{
+
+}
+
+.pav-row.info{
+
+}
+
+.pav-row.warning{
+
+}
+
+.pav-row.danger{
+
+}
+
+.pav-row.highlighted{
+	
+}
+
+.widget.default{
+
+}
+.widget.primary{
+
+}
+.widget.danger{
+
+}
+.widget.info{
+
+}
+.widget.warning{
+
+}
+.widget.highlighted{
+
+}
+/**
+ * Widget Styles
+ */
+ /* Separator style */
+.widget-separator .w_text_separator {
+  float: left;
+  height: 2px;
+  position: relative;
+  width: 100%;
+  background-color: #797C85;
+}
+.widget-separator .w_text_separator .text_separ {
+	position: absolute;
+	padding: 0 1px;
+	width: 50px;
+	top: -9px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #ffffff;
+	font-size: 15px;
+	font-family: monospace;
+}
+.widget-separator .separator_align_center {
+  left: 0;
+  right: 0;
+}
+.widget-separator .separator_align_left {
+  left: 0;
+}
+.widget-separator .separator_align_right {
+  right: 0;
+}

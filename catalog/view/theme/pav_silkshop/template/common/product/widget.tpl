@@ -1,0 +1,1 @@
+<?php $olang = $this->registry->get('language'); ?>

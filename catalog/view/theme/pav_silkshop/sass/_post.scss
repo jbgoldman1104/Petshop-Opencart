@@ -1,0 +1,78 @@
+/*
+ *    Blog module
+ */
+
+div[class*="pavcol"] {
+    padding: 0 $theme-padding;
+}
+
+.blog-item {
+    padding: 0px;
+    .latest-posts-image{
+        margin-bottom: $theme-margin;
+    }
+    .created {
+        font-style: italic;
+        color: $theme-color-three;
+    }
+    .latest-posts-title{
+        min-height: 42px;
+        a{
+            color: $theme-color-three;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+    .image{
+        margin-bottom: $theme-margin;
+    }
+    .shortinfo{
+        font-size: $font-size-base + 1;
+        letter-spacing: 0;
+        color: #999999;
+        font-weight: 300;
+    }
+}
+
+.pavblog-comments{
+    padding: $theme-padding;
+}
+
+.pav-filter-blogs {
+    background: $white none repeat scroll 0 0;
+    padding: $theme-padding + 10px;
+    .blog-item{
+        margin-bottom: $theme-margin;
+        .text-link{
+            font-weight: 600;
+            .fa{
+                @include rtl-margin-left(10px);
+            }
+        }
+    }
+    .list-inline > li{
+        display: inline;
+    }
+}
+
+.pav-blog-detail{
+    .image{
+        width: 100%;
+        overflow: hidden;
+        margin: $theme-margin 0;
+    }
+}
+
+.pavblogs-comments-box {
+    img{
+        @include rtl-padding-right(12px);
+        @include rtl-float-left();
+    }
+}
+#comment-form label{
+    @include rtl-float-left();
+
+}

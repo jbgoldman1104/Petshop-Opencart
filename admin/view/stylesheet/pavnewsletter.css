@@ -1,0 +1,23 @@
+
+.toolbar .pavbtn {
+	margin-bottom: 10px;	
+}
+
+
+.tool-icons ul li a { text-decoration:none; }
+.tool-icons ul li{ display:block; float:left; width:73px;margin:12px; }
+.tool-icons ul li span{ font-size:94%; text-align:center; display:block}
+.tool-icons .icon{ 
+	display:block;
+	width:68px;
+	height:68px;
+}
+
+.tool-icons .icon-information{ background:url(../image/pavnewsletter/big/information.png) no-repeat;}
+.tool-icons .icon-blog{ background:url(../image/pavnewsletter/big/addblog.png) no-repeat;}
+.tool-icons .icon-blogs{ background:url(../image/pavnewsletter/big/blog.png) no-repeat;}
+.tool-icons .icon-comment{ background:url(../image/pavnewsletter/big/comment.png) no-repeat;}
+.tool-icons .icon-modules{ background:url(../image/pavnewsletter/big/setting.png) no-repeat;}
+.tool-icons .icon-front-modules{ background:url(../image/pavnewsletter/big/module.png) no-repeat;}
+.tool-icons .icon-category { background:url(../image/pavnewsletter/big/forder.png) no-repeat;}
+.tool-icons .icon-addcategory { background:url(../image/pavnewsletter/big/addforder.png) no-repeat;}

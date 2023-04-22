@@ -1,0 +1,172 @@
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+@media (max-width: $screen-md-min) {
+    .row-offcanvas {
+        position: relative;
+        @include transition(all 0.25s ease-out);
+    }
+    .row-offcanvas-right {
+        @include rtl-right(0);
+    }
+    .row-offcanvas-left {
+        @include rtl-left(0);
+    }
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        @include rtl-right(-280px);
+		
+    }
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        @include rtl-left(-280px);
+    }
+    .row-offcanvas-right.active {
+        @include rtl-right(280px);
+        &:before {
+          background: rgba(0,0,0,0.3);
+          content: "";
+          @include size(100%,100%);
+          position: absolute;
+          z-index: 9;
+        }
+    }
+    .row-offcanvas-left.active {
+        @include rtl-left(280px);
+        &:before {
+          background: rgba(0,0,0,0.3);
+          content: "";
+          @include size(100%,100%);
+          position: absolute;
+          z-index: 9;
+        }
+    }
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 280px;
+        background: #fff;
+    }
+    .bottom-offcanvas {
+        border-top: 1px solid $border-color;
+        padding: 10px 0;
+    }
+
+}
+/*offcanvas-menu*/
+#offcanvasmenu {
+    .navbar-nav {
+        float: none;
+        padding: 0 $theme-padding / 2;
+        > li {
+            float: none;
+            border-bottom: 1px solid $border-color;
+            padding: 0;
+            > a {
+                background: transparent;
+                padding: 12px 20px;
+                font-family: $font-family-base;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: $font-size-base;
+                display: inline-block;
+            }
+            
+
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+        .pavo-widget{
+
+          .product-block{
+            overflow: hidden;
+            margin-bottom: 20px;
+            @include box-shadow(none);
+            .product-img{
+              @include rtl-margin-right(20px);
+              border: 1px solid $border-color;
+              a.img{
+                padding: 0;
+              }
+              img{
+                max-width: 100px;
+              }
+              &:before{
+                display: none;
+              }
+            }
+            .product-label{
+              display: none;
+            }
+            .media-body{
+              @include rtl-text-align-left();
+            }
+          }
+          .widget-heading {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+    }
+    .dropdown-menu {
+        background: none repeat scroll 0 0 transparent;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none;
+        display: none;
+        float: none;
+        margin: 0;
+        padding: 0 8px;
+        position: static;
+        visibility: visible;
+        width: auto!important;
+        @include opacity (1);
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                position: relative;
+                padding: 0;
+                @include rtl-padding-left($theme-padding);
+                border-bottom: 1px solid $border-color;
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+        a {
+            font-size: 13px;
+            padding: 12px 0;
+            display: inline-block;
+            font-family: $font-family-base;
+            background: none;
+        }
+        .widget-video{
+            display: none;
+        }
+        .box-heading{
+            color: $theme-color-second;
+        }
+    }
+    .click-canavs-menu.fa{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        @include rtl-float-right();
+    }
+    .w-product {
+        padding: 0;
+    }
+    .product-block{
+        border: none;
+        .zoom,.product-label{
+            display: none;
+        }
+    }
+}

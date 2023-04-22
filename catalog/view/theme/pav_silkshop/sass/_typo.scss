@@ -1,0 +1,119 @@
+/*-----------------------------------------------------------------------------
+
+	-	Revolution Slider 2.0 Captions -
+
+		Screen Stylesheet
+
+version:   	1.4.5
+date:      	09/18/11
+last update: 06.12.2012
+author:		themepunch
+email:     	info@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+.layerslider-wrapper{
+    margin: 0 auto;
+    position: relative;
+}
+.rev_slider{
+    position: relative;
+    overflow: hidden;
+    height:  100%;
+    width: 940px;
+}
+.bannercontainer {
+  position: relative;margin: 0px auto;
+  overflow:hidden;
+
+}
+
+.bannercontainer .banner-fullwidth {
+    width: 100% !important;
+    max-height: 100% !important;
+}
+
+.bannercontainer.banner-fullwidth{
+    width: 100% !important;
+    .fullwidthbanner {
+        max-height: 100% !important;
+        overflow: hidden !important;
+        padding: 0;
+        position: relative;
+    }
+}
+.tp-bullets.simplebullets.round {
+    .bullet{
+        @include size(10px,10px);
+        background-color: $theme-color-three;
+        &.selected{
+            background-color: $theme-color;
+        }
+    }
+}
+
+.tp-caption{
+    &.brown{
+        color: #8f7560 !important;;
+    }
+    &.black{
+        color: #414141 !important;;
+    }
+    &.very_large_black_text{
+        color: $theme-color-three !important;
+    }
+    &.btn-slider-black{
+        background-color: $theme-color-three;
+        @include border-radius(30px);
+        padding: 0 !important;
+        a{
+            font-size: 15px;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 12px 30px;
+            display: block;
+            letter-spacing: 0px;
+
+        }
+        &:hover{
+            background-color: lighten($theme-color-three,2);
+        }
+    }
+    &.btn-slider{
+        border: 2px solid $white;
+        @include border-radius(25px);
+        padding: 0;
+        @include transition(all 0.5s ease-in-out 0s);
+        a{
+            font-size: 14px;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 12px 30px;
+            display: block;
+
+        }
+        &:hover{
+            background-color: $theme-color;
+            border: 2px solid $theme-color;
+            a{
+                color: $white;
+            }
+        }
+        .fa{
+            @include rtl-margin-left(10px);
+        }
+    }
+    &.btn-theme{
+        background-color: $theme-color;
+        border: none;
+        @include box-shadow(0px 1px 3px -2px #000);
+        @include transition(all 0.3s ease-in-out 0s);
+        &:hover{
+            background-color: lighten($theme-color,10);
+            color: $white;
+            @include box-shadow(none);
+        }
+    }
+}

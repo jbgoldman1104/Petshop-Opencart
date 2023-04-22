@@ -1,0 +1,11 @@
+//
+// Temporary RTL style to fix bugs rapidly. 
+// They will move to some place more appropriate later.
+// --------------------------------------------------
+
+.pull-right {
+   float: left !important;
+}
+.pull-left {
+   float: right !important;
+}

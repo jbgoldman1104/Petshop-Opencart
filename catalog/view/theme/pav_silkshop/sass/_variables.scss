@@ -1,0 +1,140 @@
+
+// standard colors
+
+
+$white : #FFFFFF !default;
+$black : #000000 !default;
+$nocolor :  transparent !default;
+$light-gray	: #CCC !default;
+
+
+
+/*
+ * Global variables
+ */
+$image-theme-path                : '../image/' !default;
+$image-theme-skin                : '../image/default/' !default;
+
+
+// color for default theme
+$theme-color    : #9BCF61 !default; /* main color which will be used for all main block styles... */
+$border-color	: #ebebeb !default;
+
+
+$theme-color-second  			 : #34373E !default;
+$theme-color-three  			 : #282828 !default;
+$theme-color-default             : $theme-color !default;
+$theme-color-hover               : #ba9869 !default;
+$link-color                      : #bb996b !default;
+
+
+// Theme Margin, Padding
+// -------------------------
+$theme-margin    : 20px !default;
+$theme-padding   : 20px !default;
+
+// fonts
+
+$font-family-second :  $font-family-base !default;
+/**
+ * Import component variables
+ */
+
+
+@import "vars/elements";
+@import "vars/product";
+@import "vars/layout";
+// Main Menu
+// -------------------------
+$megamenu-bg                               : $white !default;
+$navbar-mega-border                        : transparent !default;
+$navbar-mega-line-height                   : 75px !default;
+
+$navbar-mega-skin2-bg                      : transparent !default;
+$navbar-mega-skin2-border                  : $border-color !default;
+$navbar-mega-skin2-line-height             : 30px !default;
+
+$navbar-text-transform                     : uppercase !default;
+
+$navbar-font-size                          : 15px !default;
+$navbar-font-weight                        : 500 !default;
+
+$navbar-link-margin                        : 0 !default;
+$navbar-link-padding                       : 0 12px !default;
+$navbar-link-color                         : $black !default;
+$navbar-link-hover-color                   : $theme-color !default;
+$navbar-link-hover-bg                      : $nocolor !default;
+$navbar-link-active-color                  : $theme-color !default;
+$navbar-link-active-bg                     : $nocolor !default;
+
+$navbar-widget-title-color                 : $black !default;
+$navbar-widget-title-margin                : 0 0 10px 0 !default;
+$navbar-widget-title-font-size             : 14px !default;
+$navbar-widget-title-font-weight		       : 900 !default;
+
+$navbar-dropdown-padding                   : 12px 0px !default;
+$navbar-dropdown-bg                        : $white !default;
+$navbar-dropdown-size                      : 200px !default;
+$navbar-dropdown-link-color                : #666666 !default;
+$navbar-dropdown-link-hover-color          : $theme-color !default;
+$navbar-dropdown-link-hover-bg             : $nocolor !default;
+$navbar-dropdown-link-transform            : none !default;
+$navbar-dropdown-link-font-size            : 14px !default;
+$navbar-dropdown-link-font-weight          : 400 !default;
+$navbar-dropdown-link-border-color         : $nocolor !default;
+
+$navbar-link-small-padding                 : 18px 0 !default;
+$navbar-link-large-padding                 : 46px 0 46px !default;
+
+// Vertical Menu
+// -------------------------
+
+// Top Menu
+// -------------------------
+$navbar-menutop-font-weight				    : 800 !default;
+$navbar-menutop-font-size				       : 12px !default;
+$navbar-menutop-padding-top				    : 22px !default;
+$navbar-menutop-padding-bottom			    : 18px !default;
+$navbar-menutop-color					       : #828282 !default;
+$navbar-menutop-margin					       : 0 10px !default;
+
+// Off-Canvas Menu
+// -------------------------
+$navbar-offcanvas-width                    : 69% !default;
+$navbar-offcanvas-bg-close                 : $nocolor !default;
+$navbar-offcanvas-color                    : $black !default;
+$navbar-offcanvas-bg                       : #f5f5f5  !default;
+$navbar-offcanvas-border                   : rgba(0, 0, 0, 0.1) !default;
+
+// Inverted navbar links
+// -------------------------
+$navbar-offcanvas-link-color               : $text-color !default;
+$navbar-offcanvas-link-hover-color         : #0281AB !default;
+$navbar-offcanvas-link-hover-bg            : transparent !default;
+$navbar-offcanvas-link-active-color        : $navbar-offcanvas-link-hover-color !default;
+$navbar-offcanvas-link-active-bg           : darken($navbar-offcanvas-bg, 10%) !default;
+$navbar-offcanvas-link-disabled-color      : #444 !default;
+$navbar-offcanvas-link-disabled-bg         : transparent !default;
+$navbar-offcanvas-link-font-size           : 14px !default;
+
+// Inverted navbar brand label
+// -------------------------
+$navbar-offcanvas-brand-color              : $navbar-offcanvas-link-color !default;
+$navbar-offcanvas-brand-hover-color        : $white !default;
+$navbar-offcanvas-brand-hover-bg           : transparent !default;
+
+// Inverted navbar search
+// -------------------------
+$navbar-offcanvas-search-bg                : lighten($navbar-offcanvas-bg, 25%) !default;
+$navbar-offcanvas-search-bg-focus          : $white !default;
+$navbar-offcanvas-search-border            : $navbar-offcanvas-bg !default;
+$navbar-offcanvas-search-placeholder-color : $light-gray !default;
+$navbar-offcanvas-search-input-bg          : transparentize($black, .10) !default;
+
+// Inverted navbar toggle
+// -------------------------
+$navbar-offcanvas-toggle-hover-bg          : $gray-dark !default;
+$navbar-offcanvas-toggle-icon-bar-bg       : $white !default;
+$navbar-offcanvas-toggle-border-color      : $gray-dark !default;
+
+$navbar-offcanvas-button-position          : -172px !default;

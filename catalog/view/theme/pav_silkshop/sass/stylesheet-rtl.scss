@@ -1,0 +1,41 @@
+// Stylesheet
+
+@import "bootstrap";
+@import "bootstrap-rtl";
+@import "mixins/rtl";
+@import "mixins/function";
+
+@import "variables";
+@import "layout";
+
+@import "nav";
+@import "bootstrap-theme";
+@import "typo";
+@import "post";
+@import "offcanvas";
+@import "product";
+@import "elements";
+@import "pages";
+@import "fonts";
+
+@import "responsive";
+
+
+#pav-categorymenu{
+  ul{
+    li{
+      span.head{
+        a{
+          float: left !important;
+        }
+      }
+    }
+  }
+}
+.rtl .navbar-mega .navbar-nav .aligned-center > .dropdown-menu{
+   transform: translate(50%);
+   -webkit-transform: translate(50%);
+   -moz-transform: translate(50%);
+   -ms-transform: translate(50%);
+   -o-transform: translate(50%);  
+}

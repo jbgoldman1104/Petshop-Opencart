@@ -1,0 +1,68 @@
+
+/* customize for body,body #page */ 
+body,body #page { 
+font-family:inherit 
+} 
+
+/* customize for #topbar a,#topbar .dropdown .dropdown-toggle,#topbar .dropdown .dropdown-menu button */ 
+#topbar a,#topbar .dropdown .dropdown-toggle,#topbar .dropdown .dropdown-menu button { 
+color:#b30e0e 
+} 
+
+/* customize for #topbar a:hover,#topbar .dropdown:hover .dropdown-toggle,#topbar .dropdown .dropdown-menu button:hover */ 
+#topbar a:hover,#topbar .dropdown:hover .dropdown-toggle,#topbar .dropdown .dropdown-menu button:hover { 
+color:#db0fdb 
+} 
+
+/* customize for .footer-center .container .column a */ 
+.footer-center .container .column a { 
+color:#db07db 
+} 
+
+/* customize for .footer-center .container .column a:hover */ 
+.footer-center .container .column a:hover { 
+color:#c7b600 
+} 
+
+/* customize for .product-block .name a */ 
+.product-block .name a { 
+color:#e300e3 
+} 
+
+/* customize for .price .price-new */ 
+.price .price-new { 
+color:#0b20de 
+} 
+
+/* customize for .price .price-old */ 
+.price .price-old { 
+color:#f20303 
+} 
+
+/* customize for 
+				.product-block .quickview a,.product-block .action div,.product-block .action div a
+			 */ 
+
+				.product-block .quickview a,.product-block .action div,.product-block .action div a
+			 { 
+color:#1c691e 
+} 
+
+/* customize for 
+				.product-block .quickview,.product-block .action div
+			 */ 
+
+				.product-block .quickview,.product-block .action div
+			 { 
+background-color:#00fcda 
+} 
+
+/* customize for .product-label */ 
+.product-label { 
+color:#ff0000 
+} 
+
+/* customize for .product-label.sale-exist */ 
+.product-label.sale-exist { 
+background-color:#0066ff 
+} 

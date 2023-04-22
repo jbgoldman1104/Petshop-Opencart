@@ -1,0 +1,342 @@
+.rtl .paneltool{
+	right: -322px;
+	left: auto;
+}
+.paneltool{
+	position: fixed;
+	top: 40px;	
+	left: -322px;
+	border:solid 1px #DDDDDD;	
+	z-index: 9999;
+	min-height: 400px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.15);
+	-moz-box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.15);
+	-ms-box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.15);
+	-o-box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.15);
+	box-shadow: 3px 3px 5px -3px rgba(0,0,0,0.15);
+	transition:all 0.6s;
+	-webkit-transition:all 0.6s;
+	-moz-transition:all 0.6s;
+	-ms-transition:all 0.6s;
+	-o-transition:all 0.6s;
+}
+
+.paneltool.themetool{
+	min-height: 215px;
+}
+
+.rtl .paneltool.active{
+	right: 0px;
+	left: auto;
+}
+.paneltool.active{
+	left: 0px;
+	transition:all 0.6s;
+	-webkit-transition:all 0.6s;
+	-moz-transition:all 0.6s;
+	-ms-transition:all 0.6s;
+	-o-transition:all 0.6s;
+}
+.paneltool.active .panelbutton{
+	color: red;
+}
+.paneltool.themetool{
+	top: 140px;
+}
+.paneltool .panelcontent{
+	background: #FFF; 
+	width: 320px;	
+}
+.paneltool .panelcontent > div{
+	padding: 15px;
+}
+.editortool .panelcontent > div{
+	padding: 15px;
+	height: 500px;
+	overflow-y:scroll;
+}
+.rtl .editortool .panelcontent > div{
+	padding-left: 0;
+}
+.rtl #customize-body .nav-tabs li a{
+	min-width: 140px;
+}
+.rtl .panelbutton{
+	left: -37px;
+	right: auto;
+}
+.panelbutton{
+	border:solid 1px #DDDDDD;	
+	background: #FFF; 
+	padding: 9px 11px;
+	position: absolute;
+	right: -37px;
+	top: 20px;
+	border-left: none;
+	cursor: pointer;	
+	box-shadow: 2px 0px 7px 2px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 2px 0px 7px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow: 2px 0px 7px 2px rgba(0,0,0,0.15);
+	-ms-box-shadow: 2px 0px 7px 2px rgba(0,0,0,0.15);
+	-o-box-shadow: 2px 0px 7px 2px rgba(0,0,0,0.15);
+}
+.editortool .panelbutton{
+	top: 350px;
+}
+
+#pav-paneltool.panel-open .panel-inner {
+	right:0
+}
+
+.paneltool .accordion-body{
+	margin-top: 10px;
+}
+
+#pav-paneltool h4 {
+	margin-bottom: 10px;	
+	color: #000000;
+}
+
+#pav-paneltool .accordion-group{
+	margin-bottom: 2px;
+}
+
+#pav-paneltool form > *{
+	float: left;
+}
+
+#pav-paneltool form .group-input{
+	margin:0 0 10px 0;
+}
+.box-patterns div{
+	display:block ;
+	width:38px;
+	height:38px;
+	float:left;
+	cursor:hand;
+	cursor:pointer;
+	border:solid 1px #f3f3f3;
+	margin:6px;
+	border:1px solid #ccc;	
+}
+.box-patterns div.active{
+	border:solid 1px red;
+}
+#pav-paneltool .nav-tabs > li:before,
+#pav-paneltool .nav-tabs > li:after{
+	display: none;
+}
+
+#customize-form{
+	position: relative;
+}
+#main-preview {
+   bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-left: 300px;
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+#main-preview iframe { 
+    height: 100%;    
+    width: 100%; 
+}
+.colorpicker{
+	z-index: 99999;
+}
+#pav-customize{
+	width: 300px;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left:0px; 
+	z-index: 3;
+	box-shadow: 0 1px 3px #999;
+	transition-duration: 0.2s;
+    transition-property: all;
+  	background: none repeat scroll 0 0 #F5F5F5;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);  
+}
+
+#pav-customize .wrapper{
+
+	padding: 12px; 
+}
+#customize-body input[type="text"], 
+#customize-body select{
+	border: 1px solid #E2E2E2;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    font-size: 11px;
+    margin: 0 5px 0 0;
+    padding: 2px 3px;
+    width: 50px;
+}
+#customize-body select{
+	color:#888;
+}
+#customize-body .panel{
+	margin-bottom: 6px;
+}
+#customize-body .panel-heading{
+	padding:4px 6px;
+	font-weight:bold;
+	font-size:10px;
+	height:auto;
+}
+
+#customize-body .nav-tabs li{
+	padding: 0;
+	margin-bottom: 3px;
+}
+
+#customize-body .nav-tabs li a{
+	padding:6px 10px;
+	font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#customize-body .accordion-group label{
+	color:#888;
+	font-size: 11px;
+	font-weight: normal
+	white-space: nowrap;
+}
+.form-group  {
+	margin-right: 6px;
+}
+.accordion-group label{
+	display: block;
+	font-size: 11px;
+
+}
+.accordion-group label{
+	float: left;
+	min-width: 100px;	
+	margin-right:10px;
+	margin-top: 5px;
+}
+
+.rtl .accordion-group label{
+	float: right;
+}
+
+#pav-customize .btn{
+	padding: 4px 12px;
+	font-size: 11px;
+	font-weight: bold;
+}
+#pav-customize .btn-show{
+	position: absolute;
+	top: 39px;
+	padding:6px 18px;
+	background:#CCC;
+	right:11px;
+	z-index: 99;
+	transition:all 1.2s;
+	cursor: hand;
+	cursor: pointer;
+}
+#customize-body .nav-tabs{
+	border-bottom: 0;
+}
+#customize-body .nav-tabs a{
+	border:none;
+	font-size: 11px;
+	padding: 6px 12px;
+}
+
+#customize-body .nav-tabs .active a{
+	background: #7DB641;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: #FFFFFF;
+}
+.accordion-heading {
+    border-bottom: 1px solid #ebebeb;
+    padding: 5px 0;
+}
+.accordion-heading .accordion-toggle{
+	font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#customize-body .form-group{
+	margin-bottom: 6px;
+	white-space: nowrap;
+}
+
+.clear-bg{
+	padding: 3px 6px;
+	margin-left: 5px;
+}
+
+.rtl .clear-bg {
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+/* .tab-content > .tab-pane, .pill-content > .pill-pane {
+    background: none repeat scroll 0 0 #FFFFFF;    
+    padding: 13px;
+} */
+
+.bi-wrapper > div{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 3px 4px;
+	border: solid 1px #999;
+	cursor:hand; cursor:pointer;
+}
+.bi-wrapper > div.active{
+	border-color:red;
+}
+
+.btn-small {
+	 border-radius: 0;
+	 background-color: #7DB641 ;
+	 color: #fff;
+	 padding: 3px 6px;
+}
+.btn-small:hover {
+	background-color: #C83A3A;
+	 color: #fff;
+}
+.editortool .label-customize{
+	position: absolute;
+	right:-155px;
+	top: 200px;	
+	width: 115px;
+	height: 74px;
+	padding: 0;
+	background-image:url(../image/label_customize.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	background-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border: 0;
+}
+.editortool .label-customize:hover{
+	background-position: 0 -111px;
+}
+.paneltool.active .label-customize{
+	display: none;	
+}

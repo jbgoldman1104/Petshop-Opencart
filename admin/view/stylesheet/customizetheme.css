@@ -1,0 +1,124 @@
+ /*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  padding:0;
+  margin:0;
+  height: 100%;
+}
+ 
+
+#contentdd{
+	height: 100%;
+}
+#header{
+	display: none!important;
+}
+
+.toppanel{
+	padding:10px 6px;
+	background: #344251;
+	color:#FFF;
+	font-weight: bold;
+}
+ .toppanel .btn{
+	margin: 0 8px;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+ 
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas{
+  	background: #fafaf9;
+
+  }
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -300px; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 300px; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 300px; /* 6 columns */
+  }
+ 
+
+
+
+ 
+#main-preview iframe {
+ 
+ 
+    height: 100%;
+    
+    width: 100%;
+    border: none;
+   	padding:0;
+   	margin: 0;
+ 
+}
+.colorpicker{
+	z-index: 9999
+}
+
+#pav-customize{
+	padding:0 10px;
+	font-size: 11px;
+}
+
+#pav-customize label{
+	font-size: 11px;
+} 
+#pav-customize .nav-tabs{
+	margin-bottom: 6px;
+}  
+#pav-customize .panel{
+	padding: 0;
+	margin-bottom: 6px;
+}  
+#pav-customize .panel-heading{
+	padding: 3px 6px;
+	margin: 0;
+	font-weight: bold;
+}
+.bi-wrapper > div {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 3px 4px;
+  border: solid 1px #999;
+  cursor: hand;
+  cursor: pointer;
+}

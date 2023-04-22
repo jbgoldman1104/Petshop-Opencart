@@ -1,0 +1,92 @@
+
+// Topbar
+// -------------------------
+$topbar-bg                                      : #34373E !default;
+$topbar-link-color                              : $light-gray !default;
+$topbar-link-hover-color                        : $theme-color !default;
+$topbar-color                                   : $light-gray !default;
+$topbar-border                                  : 0 !default;
+$topbar-font-size                               : 12px !default;
+$topbar-icon-color                              : $gray-light !default;
+$topbar-icon-font-size                          : 13px !default;
+$topbar-text-transform                          : none !default;
+$topbar-padding                            		: 8px 0px !default;
+
+
+
+//// Header
+
+$header-main-padding : 20px 0 !default; 
+
+
+
+$massbottom-head-bg		 : $theme-color !default;
+$massbottom-head-padding : 6px 9px !default;
+$massbottom-head-color   : $theme-color !default;
+$massbottom-head-border-color: darken($massbottom-head-bg,4%)!default; 
+
+/**
+ *
+ */
+
+ $mainmenu-bg: #222222 !default;
+
+
+
+
+// Footer
+// -------------------------  
+$footer-bg                                      : #fff !default;
+$footer-color                                   : $link-color !default;
+$footer-transform                               : none !default;
+$footer-font-size                               : 14px !default; 
+$footer-border                                  : none !default;
+$footer-padding-top                             : 40px !default;
+$footer-padding-bottom                          : 30px !default;
+$footer-text-hightlight                         : $white !default;
+$footer-link-font-size							      : 14px !default;
+$footer-column-margin                           : 0 0 25px 0 !default;
+$footer-link-color                              : #FFF !default;
+$footer-link-hover-color                        : $theme-color !default;
+$footer-icon-color                              : darken($white, 20%) !default;
+$footer-icon-font-size                          : 13px !default;
+$footer-heading-font-size                       : 18px !default;
+$footer-heading-color                           : $link-color !default;
+$footer-heading-margin                          : 0 0 25px !default;
+$footer-heading-padding                         : 0 0 20px !default;
+$footer-heading-display                         : none !default;
+$footer-heading-transform                       : none !default;
+$footer-list-transform                          : none !default;
+$footer-list-font-size                          : 14px !default; 
+$footer-list-margin                             : 0 0 10px !default;
+$footer-list-light-height                       : 2.5 !default;  
+$footer-heading-fweight                         : 400 !default;
+$footer-heading-ffamily                         : $font-family-second !default;
+
+$footer-newsletter-padding                      : 25px !default;
+$footer-newsletter-bg                           : $theme-color !default;
+$footer-newsletter-color                        : #484848 !default;
+$footer-newsletter-heading-font-size            : 18px !default;
+
+$footer-top-bg 									: $white !default;
+$footer-top-color  								: $black !default;
+$footer-top-padding-top							: 12px !default; 
+$footer-top-padding-bottom						: 12px !default;
+$footer-top-font-size							: 12px !default;
+$footer-top-letter-spacing						: 2px !default;
+$footer-top-border-color 						: rgba(0, 0, 0, 0.1);
+// Copyright
+// -------------------------
+
+ // Copyright
+// -------------------------
+$copyright-bg                                   : $body-bg !default;
+$copyright-color                                : $text-color !default;
+$copyright-link-color                           : $theme-color !default;
+$copyright-padding-top                          : 40px !default;
+$copyright-padding-bottom                       : 40px !default;
+$copyright-font-size							: 15px !default;
+$copyright-font-weight							: 400 !default;
+
+$del-font-size									: 12px !default;
+$del-color										: #999999;

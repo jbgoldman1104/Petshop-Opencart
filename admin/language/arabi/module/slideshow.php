@@ -1,0 +1,24 @@
+<?php
+//  Website: WWW.OpenCartArab.com
+//  E-Mail : info@OpenCartArab.com
+
+// Heading
+$_['heading_title']       = 'عرض الشرائح (سلايد شو)';
+
+// Text
+$_['text_module']         = 'الموديولات';
+$_['text_success']        = 'تم التعديل!';
+$_['text_edit']        = 'Edit Slideshow Module';
+
+// Entry
+$_['entry_name']       = 'Module Name';
+$_['entry_banner']     = 'Banner';
+$_['entry_width']      = 'Width';
+$_['entry_height']     = 'Height';
+$_['entry_status']     = 'Status';
+
+// Error
+$_['error_permission'] = 'Warning: You do not have permission to modify slideshow module!';
+$_['error_name']       = 'Module Name must be between 3 and 64 characters!';
+$_['error_width']      = 'Width required!';
+$_['error_height']     = 'Height required!';

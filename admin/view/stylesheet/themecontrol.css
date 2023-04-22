@@ -1,0 +1,171 @@
+.store-info {
+	overflow: hidden !important;
+
+}
+.theme-layout {
+	position:relative;
+}
+.theme-layout div{ position:relative;}
+.theme-layout > div{
+	position:relative;
+	clear:both;
+	min-height:60px;
+	background:#f4f4f4;
+	margin-bottom:10px;
+	border:solid #CCC 1px;
+}
+.edit-container .pos{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#FFF;
+	padding:6px 10px;
+	font-weight:bold;
+	font-size:11px;
+}
+
+.theme-layout .columns {
+	min-height:500px
+}
+.columns .column-center{
+	width:52%;
+	float:left;
+	margin:0 9px;
+}
+.columns .column-right{
+	 width:22%;
+	 float:left;
+}
+.columns .column-left{
+	float:left;
+	width:23%
+}
+ .columns > div{
+ 	min-height:500px;background:#CCC;
+	position:relative;
+ }
+   .column-center .content-top{
+	min-height:50px;
+   }
+  .column-center .content-bottom{
+
+	margin-top:300px;
+	min-height:50px;
+  }
+ 
+.layout-footer > div{
+	min-height:60px;
+	margin:8px 6px;
+	position:relative;
+	background:#CCC
+}
+.placeholder{
+	background:#FFFFBB;
+	padding:8px 12px;
+}
+.holdposition{
+		width:28%;
+		float:left;
+		min-height:600px;
+		background:#e1e1e1;
+		padding-top:24px;
+		margin-top:14px
+	}
+
+
+.module-pos {
+	width:220px;
+	font-size: 11px;
+	height:auto;
+ 
+	background:#FFF;
+	border:solid 1px #CCC;
+	cursor:hand; cursor:pointer;
+	margin:3px 10px;
+	border-radius: 2px;
+	position: relative;
+}
+.module-pos:after{
+	content: "\f047";
+	font-family: 'FontAwesome';
+	 position: absolute;
+    right: 18px;
+    top: 30%;
+}
+.module-pos:hover{
+	background: #fbf9f8
+}
+.module-pos:hover a{
+	color: #f3f3f3
+}
+.module-pos  a{
+	font-size: 11px;
+	background: url('../image/filemanager/edit-rename.png')no-repeat left center;
+	padding:5px 6px;
+	color: black;
+	background: #f8765c;
+ 
+}
+.unhookpos .module-pos{
+	background: #f8f8f8
+}
+.unhookpos .edit-container{
+	padding: 10px 0 ; 
+}
+
+.module-pos a{
+	display: block;
+	width: 80%
+}
+.module-pos  a b{
+	margin-left: 6px;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.module-pos a:before{
+	content:"\f040";
+	font-family: 'FontAwesome'
+}
+.edit-module{
+	padding: 6px 2px;
+	position: relative;	
+}
+.mod-disable {
+	background:#FFD1D1;
+	color:#555555
+}
+.module-pos  em, .module-pos i{
+	font-weight:normal;
+	font-size:10px;
+	margin-left:6px;
+}
+
+.explain{
+	font-size:11px;
+	position:absolute;color:#666;
+	top:-10px;
+	left:0;
+	padding:12px;
+	text-align:right;
+}
+.edit-container{
+	padding-top:30px;
+	padding-bottom:20px;
+	position: relative;
+}
+
+
+
+ #sform select, input, textarea {
+ 	width:180px!important;
+ }
+
+ #sform textarea {
+ 	width:380px!important;
+ }
+
+ #tab-imodules .label {
+ 	background-color: #5bc0de;
+ }
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<themeeditor>
+	<author>pavotheme</author>
+	<name>Live Theme Editor</name>	
+	<layout>
+		<item>
+		   <label>Header Layout</label>
+		   <block>header_layout</block>
+		   <default>header-v1</default>
+		   <option>
+		    <text>Header V1</text>
+		    <value>header-v1</value>
+		   </option> 
+		   <option>
+		    <text>Header V2</text>
+		    <value>header-v2</value>
+		   </option>
+		   <option>
+		    <text>Header V3</text>
+		    <value>header-v3</value>
+		   </option>
+		   <option>
+		    <text>Header V4</text>
+		    <value>header-v4</value>
+		   </option>
+            <option>
+		    <text>Header V5</text>
+		    <value>header-v5</value>
+		   </option>
+  		</item>
+
+		<item>
+			<label>Footer Layout</label>
+			<block>footer_layout</block>
+			<default>default</default>
+			<option>
+				<text>Default</text>
+				<value>default</value>
+			</option> 
+			<option>
+				<text>Footer V1</text>
+				<value>footer_v1</value>
+			</option>
+            <option>
+				<text>Footer V2</text>
+				<value>footer_v2</value>
+			</option>
+		</item>
+
+		<item>
+			<label>Enable Catalog Mode</label>
+			<block>catalog_mode</block>
+			<default>0</default>
+			<option>
+				<text>No</text>
+				<value>0</value>
+			</option> 
+			<option>
+				<text>Yes</text>
+				<value>1</value>
+			</option>
+		</item>
+		<item>
+			<label>Logo Type</label>
+			<block>logo_type</block>
+			<default>logo-theme</default>
+			<option>
+				<text>Logo In Theme</text>
+				<value>logo-theme</value>
+			</option> 
+			<option>
+				<text>Logo Opencart</text>
+				<value>logo-opencart</value>
+			</option> 
+		</item>
+		
+		<item>
+			<label>Offcanvas menu</label>
+			<block>offcanvas</block>
+			<default>category</default>
+			<option>
+				 <text>Category</text>
+				 <value>category</value>
+			</option> 
+			<option>
+				 <text>Megamenu</text>
+				 <value>megamenu</value>
+			</option>
+		</item>
+		<item>
+		   <label>Main Content Home FullWidth</label>
+		   <block>home_container_full</block>
+		   <default>0</default>
+		   <option>
+		    <text>No</text>
+		    <value>0</value>
+		   </option> 
+		   <option>
+		    <text>Yes</text>
+		    <value>1</value>
+		   </option>
+		</item>
+	</layout>
+</themeeditor>

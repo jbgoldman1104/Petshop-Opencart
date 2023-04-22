@@ -1,0 +1,260 @@
+// Support for RTL (Right to Left) & non-latin fonts
+
+$rtl-left : left;
+$rtl-right : right;
+$rtl-center: center;
+
+// BASIC CONVERTER (ignore these)
+
+@mixin rtl-base-simple ($property, $direction) {
+  #{$property}:$direction;
+  .rtl & {
+    @if $direction == $rtl-right {
+      #{$property}:$rtl-left;
+    }
+    @else {
+      #{$property}:$rtl-right;
+    }
+  }
+}
+@mixin rtl-base-inherit ($property, $direction, $value, $inherit : inherit) {
+  #{$property}-#{$direction}: $value;
+  .rtl & {
+    @if $direction == $rtl-right {
+      #{$property}-#{$rtl-left}: $value;
+    }
+    @else {
+      #{$property}-#{$rtl-right}: $value;
+    }
+    #{$property}-#{$direction}: $inherit;
+  }
+}
+
+@mixin rtl-base-toprightbottomleft ($property, $t, $r, $b, $l) {
+  #{$property}: $t $r $b $l;
+  .rtl & {
+    #{$property}: $t $l $b $r;
+  }
+}
+
+// BODY STYLES
+
+@mixin rtl-direction ($forBody : true) {
+  direction: ltr;
+  @if $forBody {
+    &.rtl {
+      direction: rtl;
+    }
+  }
+  @else {
+    .rtl & {
+      direction: rtl;
+    }
+  }
+}
+
+@mixin rtl-font-family ($ltr, $rtl, $forBody : false) {
+  font-family: $ltr;
+  @if $forBody {
+    &.rtl, &.non-latin {
+      font-family:$rtl;
+    }
+  }
+  @else {
+    .rtl &, .non-latin & {
+      font-family:$rtl;
+    }
+  }
+}
+
+
+// MARGIN
+
+@mixin rtl-margin ($t, $r, $b, $l) {
+  @include rtl-base-toprightbottomleft(margin,$t, $r, $b, $l);
+}
+@mixin rtl-margin-left ($value) {
+  @include rtl-base-inherit(margin,$rtl-left,$value);
+}
+@mixin rtl-margin-right ($value) {
+  @include rtl-base-inherit(margin,$rtl-right,$value);
+}
+
+// PADDING
+
+@mixin rtl-padding ($t, $r, $b, $l) {
+  @include rtl-base-toprightbottomleft(padding,$t, $r, $b, $l);
+}
+@mixin rtl-padding-left ($value) {
+  @include rtl-base-inherit(padding,$rtl-left,$value);
+}
+@mixin rtl-padding-right ($value) {
+  @include rtl-base-inherit(padding,$rtl-right,$value);
+}
+
+// BORDER
+
+@mixin rtl-border-left ($value) {
+  @include rtl-base-inherit(border,$rtl-left,$value);
+}
+@mixin rtl-border-right ($value) {
+  @include rtl-base-inherit(border,$rtl-right,$value);
+}
+
+// POSITION
+
+@mixin rtl-left ($value) {
+  #{$rtl-left}: $value;
+  .rtl & {
+    #{$rtl-right}: $value;
+    #{$rtl-left}: auto;
+  }
+}
+@mixin rtl-right ($value) {
+  #{$rtl-right}: $value;
+  .rtl & {
+    #{$rtl-left}: $value;
+    #{$rtl-right}: auto;
+  }
+}
+
+
+// CLEAR
+
+@mixin rtl-clear-left () {
+  @include rtl-base-simple(clear, $rtl-left);
+}
+@mixin rtl-clear-right () {
+  @include rtl-base-simple(clear, $rtl-right);
+}
+
+// TEXT-ALIGN
+
+@mixin rtl-text-align-left () {
+  @include rtl-base-simple(text-align, $rtl-left);
+}
+@mixin rtl-text-align-right () {
+  @include rtl-base-simple(text-align, $rtl-right);
+}
+@mixin rtl-text-align-center () {
+  @include rtl-base-simple(text-align, $rtl-center);
+}
+
+// FLOAT
+
+@mixin rtl-float-left () {
+  @include rtl-base-simple(float, $rtl-left);
+}
+@mixin rtl-float-right () {
+  @include rtl-base-simple(float, $rtl-right);
+}
+
+// BACKGROUND-POSITION
+
+@mixin rtl-background-position-left ($vertical) {
+  background-position:$rtl-left $vertical;
+  .rtl & {
+    background-position:$rtl-right $vertical;
+  }
+}
+@mixin rtl-background-position-right ($vertical) {
+  background-position:$rtl-right $vertical;
+  .rtl & {
+    background-position:$rtl-left $vertical;
+  }
+}
+
+@mixin rtl-background-position-percent ($vertical, $horPercent) {
+  background-position:$horPercent $vertical;
+  .rtl & {
+    background-position:100% - $horPercent $vertical;
+  }
+}
+
+// TEXT-SHADOW & BOX-SHADOW
+
+@mixin rtl-text-shadow ($x, $rest) {
+  text-shadow: $x $rest;
+  .rtl & {
+    text-shadow: -1 * $x $rest;
+  }
+}
+@mixin rtl-box-shadow ($x, $rest) {
+  -moz-box-shadow: $x $rest;
+  -webkit-box-shadow: $x $rest;
+  box-shadow: $x $rest;
+  .rtl & {
+    -moz-box-shadow: -1 * $x $rest;
+    -webkit-box-shadow: -1 * $x $rest;
+    box-shadow: -1 * $x $rest;
+  }
+}
+
+// BORDER-RADIUS
+
+@mixin rtl-border-radius-topright ($tl, $tr, $br, $bl) {
+  -moz-border-radius: $tl, $tr, $br, $bl;
+  -webkit-border-radius: $tl, $tr, $br, $bl;
+  border-top-radius: $tl, $tr, $br, $bl;
+  .rtl & {
+    -moz-border-radius: $tr, $tl, $bl, $br;
+    -webkit-border-radius: $tr, $tl, $bl, $br;
+    border-top-radius: $tr, $tl, $bl, $br;
+  }
+}
+
+@mixin rtl-border-radius-topright ($value) {
+  -moz-border-radius-top#{$rtl-right}: $value;
+  -webkit-border-top-#{$rtl-right}-radius: $value;
+  border-top-#{$rtl-right}-radius: $value;
+  .rtl & {
+    -moz-border-radius-top#{$rtl-left}: $value;
+    -webkit-border-top-#{$rtl-left}-radius: $value;
+    border-top-#{$rtl-left}-radius: $value;
+    -moz-border-radius-top#{$rtl-right}: inherit;
+    -webkit-border-top-#{$rtl-right}-radius: inherit;
+    border-top-#{$rtl-right}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-bottomright ($value) {
+  -moz-border-radius-bottom#{$rtl-right}: $value;
+  -webkit-border-bottom-#{$rtl-right}-radius: $value;
+  border-bottom-#{$rtl-right}-radius: $value;
+  .rtl & {
+    -moz-border-radius-bottom#{$rtl-left}: $value;
+    -webkit-border-bottom-#{$rtl-left}-radius: $value;
+    border-bottom-#{$rtl-left}-radius: $value;
+    -moz-border-radius-bottom#{$rtl-right}: inherit;
+    -webkit-border-bottom-#{$rtl-right}-radius: inherit;
+    border-bottom-#{$rtl-right}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-topleft ($value) {
+  -moz-border-radius-top#{$rtl-left}: $value;
+  -webkit-border-top-#{$rtl-left}-radius: $value;
+  border-top-#{$rtl-left}-radius: $value;
+  .rtl & {
+    -moz-border-radius-top#{$rtl-right}: $value;
+    -webkit-border-top-#{$rtl-right}-radius: $value;
+    border-top-#{$rtl-right}-radius: $value;
+    -moz-border-radius-top#{$rtl-left}: inherit;
+    -webkit-border-top-#{$rtl-left}-radius: inherit;
+    border-top-#{$rtl-left}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-bottomleft ($value) {
+  -moz-border-radius-bottom#{$rtl-left}: $value;
+  -webkit-border-bottom-#{$rtl-left}-radius: $value;
+  border-bottom-#{$rtl-left}-radius: $value;
+  .rtl & {
+    -moz-border-radius-bottom#{$rtl-right}: $value;
+    -webkit-border-bottom-#{$rtl-right}-radius: $value;
+    border-bottom-#{$rtl-right}-radius: $value;
+    -moz-border-radius-bottom#{$rtl-left}: inherit;
+    -webkit-border-bottom-#{$rtl-left}-radius: inherit;
+    border-bottom-#{$rtl-left}-radius: inherit;
+  }
+}

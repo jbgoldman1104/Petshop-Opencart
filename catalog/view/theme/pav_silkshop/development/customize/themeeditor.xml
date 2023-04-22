@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<themeeditor>
+	<version value="1.4">
+	<ccc available="true" />
+	<guest_checkout available="true" />
+	<one_page_checkout available="true" />
+	<store_locator available="true" />
+	</version>
+	<author>themelexus</author>
+<name>Live Theme Editor</name>	
+<selectors>
+	<items>
+		<header>Body Content</header>
+		<match>body</match>		
+		<item>
+			<type>text</type>
+			<label>Background Color</label>
+			<selector>body</selector>
+			<attrs>background-color</attrs>
+		</item>
+		<item>
+		    <type>image</type>
+			<label>Background Image</label>
+			<selector>body,body #page</selector>
+			<attrs>background-image</attrs>
+		    </item>
+	 	<item>
+			<type>fontsize</type>
+			<label>Font-Size</label>
+			<selector>body,body #page</selector>
+			<attrs>font-size</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Text Color</label>
+			<selector>body,body #page</selector>
+			<attrs>color</attrs>
+		</item>
+        <item>
+			<type>text</type>
+			<label>Color Heading</label>
+			<selector>h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6</selector>
+			<attrs>color</attrs>
+		</item>
+
+		<item>
+			<type>text</type>
+			<label>Link Color</label>
+			<selector>body a,body #page a</selector>
+			<attrs>color</attrs>
+		</item> 
+	</items>
+ 
+	<items>
+		<header>Top Bar</header>
+		<match>top-bar</match>	
+		<item>
+			<type>text</type>
+			<label>Background </label>
+			<selector>.topbar</selector>
+			<attrs>background-color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Link Color</label>
+			<selector>.top-link button.btn, .top-link li, .top-link a</selector>
+			<attrs>color</attrs>
+		</item>
+		<item>
+			<type>text</type>
+			<label>Text color</label>
+			<selector>.topbar .info-topbar li,.topbar .info-topbar .fa</selector>
+			<attrs>color</attrs>
+		</item>
+
+	</items>
+	<items>
+		<header>Main Menu</header>
+		<match>pav-mainnav</match>	
+
+	 	<item>
+			<type>text</type>
+			<label>Color Link</label>
+			<selector>.navbar-mega .navbar-nav > li > a</selector>
+			<attrs>color</attrs>
+		</item> 
+		<item>
+			<type>text</type>
+			<label>Bg sub menu</label>
+			<selector>.navbar-mega .navbar-nav > li .dropdown-menu</selector>
+			<attrs>background-color</attrs>
+		</item>
+		<item>
+			<type>text</type>
+			<label>Color link sub menu</label>
+			<selector>.navbar-mega .navbar-nav > li .dropdown-menu li a</selector>
+			<attrs>color</attrs>
+		</item>
+	</items>
+	<items>
+		<header>Footer</header>
+		<match>footer</match>
+		<item>
+			<type>text</type>
+			<label>Background </label>
+			<selector>footer</selector>
+			<attrs>background-color</attrs>
+		</item>
+
+	</items>
+
+	<items>
+		<header>Powered</header>
+		<match>powered</match>	
+		<item>
+			<type>text</type>
+			<label>Background </label>
+			<selector>#powered,.copyright</selector>
+			<attrs>background-color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Text color</label>
+			<selector>#powered .container,.copyright</selector>
+			<attrs>color</attrs>
+		</item>
+
+
+	</items>
+
+</selectors>
+
+<elements>
+	<items>
+		<header>Products</header>
+		<match>product</match>
+		<item>
+			<type>text</type>
+			<label>Product Name</label>
+			<selector>.product-block .name a</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Color Price New</label>
+			<selector>.price .price-new</selector>
+			<attrs>color</attrs>
+		</item>  		
+ 		<item>
+			<type>text</type>
+			<label>Color Price Old</label>
+			<selector>.price .price-old</selector>
+			<attrs>color</attrs>
+		</item> 
+
+		<item>
+			<type>text</type>
+			<label>Icon Color</label>
+			<selector>
+				.product-block .quickview a,.product-block .action div,.product-block .action div a
+			</selector>
+			<attrs>color</attrs>
+		</item>
+		<item>
+			<type>text</type>
+			<label>BgIcon Color</label>
+			<selector>
+				.product-block .quickview,.product-block .action div
+			</selector>
+			<attrs>background-color</attrs>
+		</item>
+		<item>
+			<type>text</type>
+			<label>Color Sale</label>
+			<selector>.product-label</selector>
+			<attrs>color</attrs>
+		</item>
+		<item>
+			<type>text</type>
+			<label>Bg Sale</label>
+			<selector>.product-label.sale-exist</selector>
+			<attrs>background-color</attrs>
+		</item>
+	</items>
+
+</elements>
+</themeeditor>

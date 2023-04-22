@@ -1,0 +1,44 @@
+
+
+@import "../skins/yellow/vars/variables-bootstrap";
+@import "../skins/yellow/vars/variables-opencart";
+@import "../skins/yellow/addition/bootstrap";
+@import "../bootstrap";
+@import "../bootstrap-rtl";
+@import "../mixins/rtl";
+@import "../mixins/function";
+
+@import "../variables";
+@import "../layout";
+@import "../nav";
+@import "../post";
+@import "../typo";
+@import "../bootstrap-theme";
+@import "../product";
+@import "../elements";
+@import "../pages";
+@import "../fonts";
+@import "../offcanvas";
+@import "../responsive";
+
+@import "../skins/yellow/addition/style";
+
+
+#pav-categorymenu{
+    ul{
+      li{
+        span.head{
+          a{
+            float: left !important;
+          }
+        }
+      }
+    }
+}
+.rtl .navbar-mega .navbar-nav .aligned-center > .dropdown-menu{
+   transform: translate(50%);
+   -webkit-transform: translate(50%);
+   -moz-transform: translate(50%);
+   -ms-transform: translate(50%);
+   -o-transform: translate(50%);  
+}

@@ -1,0 +1,7 @@
+#nav-sidebar, .page-head, #footer, #header{
+	display: none!important;
+}
+.page-sidebar #content, #content.bootstrap{
+	padding: 0!important;
+	margin: 0!important;
+}

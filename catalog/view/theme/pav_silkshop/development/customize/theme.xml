@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<topbar>
+		 <title>Topbar Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>Customer Support</title>
+	 	 	<field>
+	 	 		<name>widget_call</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<strong class="fa fa-phone"></strong> <span><b>Customer Support</b> <br> Call: <span> + 0123 456 789</span></span>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>
+	 	 <module>
+	 	 	<title>Contact Info</title>
+	 	 	<field>
+	 	 		<name>widget_contact</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default>
+	 	 			<![CDATA[
+	 	 				<strong class="fa fa-envelope"></strong> <span><b>Contact Info</b> <br> <span> info@company.com</span></span>
+	 	 			]]>
+	 	 		</default>
+	 		</field>
+	 	 </module>	
+	</topbar>
+	<div>
+		<title>Footer Center Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>About us</title>
+	 	 	<field>
+	 	 		<name>widget_site_info</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+	 	 		<div class="media">
+				<div class="media-body">
+					<div class="ourservice-content">
+						<p>We believe to create great products; we have to start with a simple idea and then craft around that intention. We obsessively try to keep it as simple as possible, while trying to make each part as good as possible, every stitch, every button, they have all been intensively thought out.</p>
+					</div>
+				</div>
+				</div>
+	 	 		]]></default>
+	 		</field>
+	 	 </module>
+	 	 <module>
+	 	 	<title>Contact us</title>
+	 	 	<field>
+	 	 		<name>widget_contact_us</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[
+	 	 			<div class="box-content">
+					<ul class="contact-us list-unstyled">
+						<li><i class="fa fa-map-marker">&nbsp;</i>PO Box 16122 Collins Street West <br/> Victoria 8007 Australia</li>
+						<li><i class="fa fa-phone">&nbsp;</i>+ (00) 123 456 789 <br/> + (00) 123 456 789</li>
+						<li><i class="fa fa-envelope-o">&nbsp;</i> <a href="mailto:contac@yourcompany.com">contac@yourcompany.com</a></li>
+					</ul>
+					</div>
+	 	 		]]></default>
+	 		</field>
+	 	 </module>
+	</div>
+
+	<footer>
+		 <title>Footer Botton Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>Logo Payment</title>
+	 	 	<field>
+	 	 		<name>widget_paypal</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[<img class="img-responsive" src="image/catalog/demo/payment.png" alt="">]]></default>
+	 		</field>
+	 	 </module>
+	</footer>
+</theme>

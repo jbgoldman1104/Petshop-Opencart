@@ -1,0 +1,65 @@
+.newsletter_block {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    padding: 7px;
+}
+.newsletter_block .title_block, .newsletter_block h4 {
+    background: url("../image/newsletter.png") no-repeat scroll 0 0 transparent;
+    color: #666666;
+    padding: 0 0 12px 28px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+.newsletter_block p{
+	padding:0px;
+}
+.newsletter_block input.inputNew {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-left-radius: 3px;
+    border-color: #CCCCCC -moz-use-text-color #CCCCCC #CCCCCC;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-top-left-radius: 3px;
+    border-width: 1px medium 1px 1px;
+    color: #999999;
+    font-size: 10px;
+    height: 20px;
+    padding: 0 5px;
+    position: relative;
+    top: -1px;
+    width: 120px;
+}
+.newsletter_block input.button_mini {
+    background: url("../image/newsletter_ok.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    height: 23px;
+    left: -2px;
+    position: relative;
+    text-indent: -5000px;
+    width: 24px;
+}
+
+.newsletter_block p.success_inline {
+    color: #418B19;
+    font-weight: bold;
+    text-align: center;
+}
+.newsletter_block p.warning_inline {
+    color: #DA0F00;
+    font-weight: bold;
+    text-align: center;
+}
+.close .fa {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    vertical-align: top;
+}
